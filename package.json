@@ -1,0 +1,7 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wes Rast <wes.rast@gmail.com>",
+  "license": "MIT"
+}
