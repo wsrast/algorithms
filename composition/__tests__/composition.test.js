@@ -1,7 +1,3 @@
-/**
- * main.js
- * this is your main test class.
- */
 const Factory = require('../composition');
 
 describe('Compositional inheritance', () => {
