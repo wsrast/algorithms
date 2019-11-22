@@ -1,7 +1,38 @@
 {
-  "name": "algorithms",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Wes Rast <wes.rast@gmail.com>",
-  "license": "MIT"
+	"name": "algorithms",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Wes Rast <wes.rast@gmail.com>",
+	"license": "MIT",
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,json,css,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"devDependencies": {
+		"@wsrast/lint": "1.0.9",
+		"cross-env": "5.2.0",
+		"eslint": "5.16.0",
+		"eslint-config-airbnb": "17.1.0",
+		"eslint-config-prettier": "4.1.0",
+		"eslint-plugin-import": "2.16.0",
+		"eslint-plugin-jest": "22.4.1",
+		"eslint-plugin-jsx-a11y": "6.2.1",
+		"eslint-plugin-prettier": "3.0.1",
+		"eslint-plugin-react": "7.12.4",
+		"eslint-plugin-react-hooks": "1.6.0",
+		"husky": "1.3.1",
+		"jest": "24.7.0",
+		"jest-dom": "3.1.3",
+		"jest-in-case": "1.0.2",
+		"lint-staged": "8.1.5",
+		"prettier": "1.16.4",
+		"react-testing-library": "6.0.4"
+	}
 }

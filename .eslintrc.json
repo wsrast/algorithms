@@ -1,0 +1,19 @@
+{
+	"extends": ["airbnb", "prettier"],
+	"plugins": ["prettier", "react-hooks", "jest"],
+	"rules": {
+		"indent": ["off", "tab", { "SwitchCase": 1 }],
+		"no-plusplus": "off",
+		"jsx-a11y/anchor-is-valid": "off",
+		"linebreak-style": "off",
+		"prettier/prettier": ["error"],
+		"react/jsx-filename-extension": "off",
+		"react/jsx-indent": "tab",
+		"react-hooks/rules-of-hooks": "error",
+		"react/jsx-one-expression-per-line": "off",
+		"react/jsx-indent-props": "off"
+	},
+	"env": {
+		"jest/globals": true
+	}
+}
