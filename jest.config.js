@@ -6,4 +6,5 @@ module.exports = {
 		'\\.(css|less)$': 'identity-obj-proxy',
 	},
 	// setupFilesAfterEnv: ['./jest.setup.js'],
+	verbose: true,
 };
