@@ -34,3 +34,11 @@ to:
 | x/z  | 3     |
 | y    | 10    |
 | ...  |
+
+## Simple Factorial Function
+
+Interviewers seem fascinated by factorial functions, so here's a simple version of the recursive part as a one-liner, with the tests in the associated folder.
+
+```js
+const factorial = num => (num <= 1 ? 1 : num * factorial(num - 1));
+```
