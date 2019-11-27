@@ -8,5 +8,14 @@ module.exports = {
 				},
 			},
 		],
+		[
+			'@babel/preset-typescript',
+			{
+				allExtensions: false,
+				targets: {
+					node: 'current',
+				},
+			},
+		],
 	],
 };

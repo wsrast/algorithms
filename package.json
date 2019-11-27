@@ -5,6 +5,8 @@
 	"author": "Wes Rast <wes.rast@gmail.com>",
 	"license": "MIT",
 	"scripts": {
+		"types": "tsc -p .",
+		"types:watch": "tsc --watch",
 		"start": "nodemon composition.js",
 		"test": "jest",
 		"test:watch": "jest --watch"
@@ -28,8 +30,11 @@
 		"@babel/core": "^7.7.2",
 		"@babel/preset-env": "^7.7.1",
 		"@babel/preset-react": "^7.7.0",
+		"@babel/preset-typescript": "^7.7.4",
 		"@testing-library/jest-dom": "4.2.4",
 		"@testing-library/react": "9.3.2",
+		"@types/jest": "^24.0.23",
+		"@types/jest-in-case": "^1.0.1",
 		"@wsrast/lint": "2.0.0",
 		"babel-eslint": "^10.0.3",
 		"babel-jest": "^24.9.0",
@@ -48,6 +53,7 @@
 		"jest-in-case": "^1.0.2",
 		"lint-staged": "9.4.3",
 		"prettier": "1.19.1",
-		"react-test-renderer": "^16.12.0"
+		"react-test-renderer": "^16.12.0",
+		"typescript": "^3.7.2"
 	}
 }

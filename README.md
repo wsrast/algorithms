@@ -54,3 +54,11 @@ const factorial = num => (num <= 1 ? 1 : num * factorial(num - 1));
 Another one I've run into in interviews is to find the lowest missing positive number in an array that includes postive and negative numbers up to Math.MAX_SAFE_NUMBER. This sounded very simple to me, then very complicated. Later, after the interview, I realized there's a very simple solution to this thanks to `Array.includes()`.
 
 Code here: [lowestmissing.js](lowestmissing/lowestmissing.js)
+
+## Intersected Strings
+
+Write a function that reads two strings, each containing comma-separated lists of numbers in ascending order, then returns an array of all intersecting values. These intersecting values are defined as the same integer at the same index position in both arrays.
+
+Example: [1,3,4,5,13], and [1,8,11,12,13] would return [1,13].
+
+Code here: [intersect.js](intersect/intersect.js).
