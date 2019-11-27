@@ -61,4 +61,4 @@ Write a function that reads two strings, each containing comma-separated lists o
 
 Example: [1,3,4,5,13], and [1,8,11,12,13] would return [1,13].
 
-Code here: [intersect.js](intersect/intersect.js).
+Code here: [intersect.ts](intersect/intersect.ts). I've also added some TypeScript support to this one, just to tinker with it since it's now easier to integrate with Babel.
