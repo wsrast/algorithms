@@ -62,3 +62,28 @@ Write a function that reads two strings, each containing comma-separated lists o
 Example: [1,3,4,5,13], and [1,8,11,12,13] would return [1,13].
 
 Code here: [intersect.ts](src/intersect/intersect.ts). I've also added some TypeScript support to this one, just to tinker with it since it's now easier to integrate with Babel.
+
+## Deep vs. Shallow Copy
+
+Most cloning methods deal with shallow copies (copies which share references with their source object), which can cause subtle and elusive bugs. Having a way of making deep copies that you can rely on to remain encapsulated and unique is an important tool to have in your arsenal. Below is a series of options.
+
+### Shallow Copies
+
+Some ways you can make a shallow copy of an object:
+
+1. Use Object.assign().
+1. Use the spread operator.
+
+### Deep Copies
+
+Most of the strategies commonly used for making deep copies of objects are flawed, but continue to be used since they appear on the surface to work. In particular, the JSON stringify/parse pattern is thought of as a clever hack, but while it produces a true deep copy in a separate memory space, it fails to reproduce simple user-defined methods. If you use JS prototypes or the `Object.defineProperty()` method, you will most certainly run afoul of these problems if you stick to non-recursive copies.
+
+Options for copying objects:
+
+| Method               | Deep | Copies Non-enum | Copies Methods | Copies Prototype Props |
+| -------------------- | ---- | --------------- | -------------- | ---------------------- |
+| Object.assign()      | no   | no              | yes            | no                     |
+| Spread operator      | no   | no              | yes            | no                     |
+| Ramda/Lodash         | yes  | yes             | yes            | yes                    |
+| for...in loop        | no   | no              | yes            | yes                    |
+| JSON stringify/parse | yes  | no              | no             | no                     |
